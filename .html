@@ -1,1 +1,271 @@
-primera página html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto: San Andreas - Guía de Claves por Jorge Daniel González</title>
+    <style>
+        /* --- ESTILOS GENERALES Y TEMA GTA --- */
+        :root {
+            --primary-color: #2e7d32; /* Verde Grove Street */
+            --bg-color: #0b0b0b;
+            --card-bg: #141414;
+            --text-color: #ffffff;
+            --text-secondary: #aaaaaa;
+            --accent-pc: #00bcd4; /* Cian para PC */
+            --accent-ps2: #3f51b5; /* Azul clásico para PlayStation */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Grand_Theft_Auto_San_Andreas_logo.svg') no-repeat center center;
+            background-size: contain;
+            background-color: #000;
+            text-align: center;
+            padding: 70px 20px;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        header h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 3.5rem;
+            margin: 0;
+            color: #fff;
+            text-shadow: 3px 3px 0px var(--primary-color);
+            letter-spacing: 2px;
+        }
+
+        header .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.3rem;
+            margin-top: 12px;
+        }
+
+        header .author {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-top: 8px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .category-title {
+            text-align: center;
+            margin: 50px 0 30px 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        /* --- GRID --- */
+        .cheats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* --- TARJETAS --- */
+        .cheat-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            transition: transform 0.3s, border-color 0.3s;
+            border: 1px solid #222;
+        }
+
+        .cheat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .card-image-wrapper {
+            width: 100%;
+            height: 180px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+        /* --- PLACAS DE CÓDIGOS --- */
+        .platform-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .platform-label {
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .pc-label { color: var(--accent-pc); }
+        .ps2-label { color: var(--accent-ps2); }
+
+        .code-box {
+            font-family: 'Consolas', monospace;
+            background-color: #000;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            display: block;
+            color: #fff;
+            border-left: 3px solid;
+            word-wrap: break-word;
+        }
+
+        .pc-code { border-left-color: var(--accent-pc); }
+        .ps2-code { border-left-color: var(--accent-ps2); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #050505;
+            color: var(--text-secondary);
+            border-top: 3px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GTA SAN ANDREAS</h1>
+        <div class="subtitle">Guía de Claves Oficiales para PC y PS2</div>
+        <div class="author">Página Creada por Jorge Daniel González</div>
+    </header>
+
+    <main>
+
+        <h2 class="category-title">Salud y Armamento</h2>
+        <div class="cheats-grid">
+
+            <!-- TARJETA 1 -->
+            <div class="cheat-card">
+                <div class="card-image-wrapper">
+                    <img src="hesoyam.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Simple_heart_icon.svg/120px-Simple_heart_icon.svg.png';" alt="Salud y Dinero" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h3>Salud, Armadura Max y $250k</h3>
+                    <div class="platform-container">
+                        <span class="platform-label pc-label">PC:</span>
+                        <span class="code-box pc-code">HESOYAM</span>
+                    </div>
+                    <div class="platform-container">
+                        <span class="platform-label ps2-label">PS2:</span>
+                        <span class="code-box ps2-code">R1, R2, L1, X, IZQUIERDA, ABAJO, DERECHA, ARRIBA, IZQUIERDA, ABAJO, DERECHA, ARRIBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="cheat-card">
+                <div class="card-image-wrapper">
+                    <img src="weapons.jpg" alt="Pack de Armas 1" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h3>Pack de Armas 1 (Thug Tools)</h3>
+                    <div class="platform-container">
+                        <span class="platform-label pc-label">PC:</span>
+                        <span class="code-box pc-code">LXGIWYL</span>
+                    </div>
+                    <div class="platform-container">
+                        <span class="platform-label ps2-label">PS2:</span>
+                        <span class="code-box ps2-code">R1, R2, L1, R2, IZQUIERDA, ABAJO, DERECHA, ARRIBA, IZQUIERDA, ABAJO, DERECHA, ARRIBA</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="category-title">Vehículos Especiales</h2>
+        <div class="cheats-grid">
+
+            <!-- TARJETA 3 -->
+            <div class="cheat-card">
+                <div class="card-image-wrapper">
+                    <img src="rhino.jpg" alt="Tanque Rhino" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h3>Tanque Militar Rhino</h3>
+                    <div class="platform-container">
+                        <span class="platform-label pc-label">PC:</span>
+                        <span class="code-box pc-code">AIWPRTON</span>
+                    </div>
+                    <div class="platform-container">
+                        <span class="platform-label ps2-label">PS2:</span>
+                        <span class="code-box ps2-code">CÍRCULO, CÍRCULO, L1, CÍRCULO, CÍRCULO, CÍRCULO, L1, L2, R1, TRIÁNGULO, CÍRCULO, TRIÁNGULO</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 4 -->
+            <div class="cheat-card">
+                <div class="card-image-wrapper">
+                    <img src="jetpack.jpg" alt="Jetpack" class="card-image">
+                </div>
+                <div class="card-content">
+                    <h3>Mochila Propulsora (Jetpack)</h3>
+                    <div class="platform-container">
+                        <span class="platform-label pc-label">PC:</span>
+                        <span class="code-box pc-code">ROCKETMAN</span>
+                    </div>
+                    <div class="platform-container">
+                        <span class="platform-label ps2-label">PS2:</span>
+                        <span class="code-box ps2-code">L1, L2, R1, R2, ARRIBA, ABAJO, IZQUIERDA, DERECHA, L1, L2, R1, R2, ARRIBA, ABAJO, IZQUIERDA, DERECHA</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Diseñado por <strong>Jorge Daniel González</strong>. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
